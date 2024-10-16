@@ -220,6 +220,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
     recordMap
   })
 
+  // Add this line to print the entire recordMap
+  console.log('Full recordMap:', JSON.stringify(recordMap, null, 2))
+
   if (!config.isServer) {
     // add important objects to the window global for easy debugging
     const g = window as any
